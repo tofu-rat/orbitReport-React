@@ -2,6 +2,7 @@ import satData from "./satData";
 
 const Table = ({ sat }) => {
   return (
+    <div>
       <table>
        <thead>
         <tr>
@@ -20,10 +21,11 @@ const Table = ({ sat }) => {
           <td>{data.status}</td>
           <td>{data.operational ? "Active" : "Inactive"}</td>
           </tr>
-        )};
+        )}
         </tbody>
       </table>
-  );
+      </div>
+  )
 };
 
 export default Table;
